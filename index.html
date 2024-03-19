@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9a8f8a7a1d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>React Native Developer</p>
+                <h1>Hi, I'm <span>Ashwini Kumar</span><br>Attri from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------About------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a IT Analyst at Tata Consultancy Services (TCS), I have over three years of experience in
+                        designing, developing, and deploying consumer and enterprise applications for Android platforms.
+                        I have a strong understanding and implementation knowledge of Android native libraries and
+                        services, as well as React Native app development. I am proficient in using Android Jetpack,
+                        Kotlin Coroutines, and Dagger software tools, and have created a chat application app using
+                        Android Jetpack Compose and Firebase, which is available for download from the link. I am
+                        currently adding new features to this app, and I am always eager to learn new technologies and
+                        frameworks to enhance my skills and deliver quality products. I hold a Bachelor of Technology
+                        degree in Electrical and Electronics Engineering from Guru Gobind Singh Indraprastha University
+                        (GGSIPU), and have received multiple awards and certificates from TCS for my service and
+                        commitment, continuous feedback, and teaching abilities.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Android Development</span><br>Native Android App Devlopment</li>
+                        </ul>
+                        <ul>
+                            <li><span>React Native</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>IT Analyst at TCS</li>
+                        </ul>
+                        <ul>
+                            <li><span>2022 - 2024</span><br>System Engineer at TCS</li>
+                        </ul>
+                        <ul>
+                            <li><span>2021 - 2022</span><br>Asst. System Engineer at TCS</li>
+                        </ul>
+                        <ul>
+                            <li><span>2020 - 2021</span><br>Asst. System Engineer Trainee at TCS</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018</span><br>B.Tech from Guru Gobind Singh Indraprastha University, Delhi</li>
+                        </ul>
+                        <ul>
+                            <li><span>2014</span><br>12th from MAHARAJA AGARSAIN PUBLIC SCHOOL, Delhi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------services--------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="serices-list">
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h1>React Native Developer</h1>
+                    <p>Demonstrated expertise in implementing Android native libraries and services, as well as React
+                        Native app development.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h1>Android Developer</h1>
+                    <p>Demonstrated expertise in implementing Android native libraries and services, as well as React
+                        Native app development.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <!-- <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h1>App Design</h1>
+                    <p>Demonstrated expertise in implementing Android native libraries and services, as well as React Native app development.</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------portfolio ----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Blo App Android (Native Android)</h3>
+                        <p>BLO App (erstwhile known as GARUDA App) is a dedicated Mobile App for BLOs for performing their tasks digitally.</p>
+                        <a href="https://play.google.com/store/apps/details?id=in.gov.eci.bloapp&hl=en&gl=US&pli=1"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Blo App iOS (React Native)</h3>
+                        <p>BLO App (erstwhile known as GARUDA App) is a dedicated Mobile App for BLOs for performing their tasks digitally.</p>
+                        <a href="https://apps.apple.com/in/app/bloapp-eci/id6449996333"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>ERONET (React Native)</h3>
+                        <p>Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.</p>
+                        <a href="https://play.google.com/store/apps/details?id=in.gov.eci.eronet&hl=en&gl=US"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------contact------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ashwinikumar@attri.app</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 8860555533</p>
+                    <div class="social-cons">
+                        <a href="https://www.instagram.com/ashwinikumarattri/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ashwinikumarattri/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ashwinikumarattri"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © attri.app. Made with <i class="fa-solid fa-heart"></i> by Ashwini Kumar Attri</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
